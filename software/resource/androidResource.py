@@ -27,4 +27,3 @@ class home:
         if flag == 4:
             # TODO: Light off
             print("Light off")
-
