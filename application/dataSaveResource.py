@@ -7,7 +7,6 @@
 import web
 import datetime
 db = web.database(dbn='mysql', db='SmartHome', user='root', host='13.67.109.181', pw='root')
-web.header("Access-Control-Allow-Origin", "*")
 
 
 def insert_humid(humid):
@@ -31,8 +30,9 @@ def insert_temp(temp):
             return None
 
 
-# if __name__ == '__main__':
-#
-#     insert_humid(78.0)
-#     insert_pressure(1.0)
-#     insert_temp(21.0)
+if __name__ == '__main__':
+
+    insert_humid(78.0)
+    insert_pressure(1.0)
+    insert_temp(21.0)
+    print("running")
