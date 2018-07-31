@@ -9,18 +9,12 @@ import open_air
 import open_light
 import close_air
 import close_light
-import BME280
 
 urls = (
     '/home', 'home'
 )
 
 app = web.application(urls, globals())
-
-
-class data_process:
-    def get_data(self):
-        BME280.read_data()
 
 
 class home:

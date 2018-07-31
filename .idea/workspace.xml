@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="968d182c-65df-42a4-9936-c4169a38fc33" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/hardware/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hardware/_init_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hardware/dataSaveResource.py" beforeDir="false" afterPath="$PROJECT_DIR$/hardware/dataSaveResource.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hardware/BME280.py" beforeDir="false" afterPath="$PROJECT_DIR$/hardware/BME280.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hardware/androidResource.py" beforeDir="false" afterPath="$PROJECT_DIR$/hardware/androidResource.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,6 +15,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/SmartHome$soundRecognise.coverage" NAME="soundRecognise Coverage Results" MODIFIED="1533007138673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/software/resource/soundRecognise" />
     <SUITE FILE_PATH="coverage/SmartHome$BME280.coverage" NAME="BME280 Coverage Results" MODIFIED="1533029836141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hardware" />
+    <SUITE FILE_PATH="coverage/SmartHome$androidResource.coverage" NAME="androidResource Coverage Results" MODIFIED="1533030741900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hardware" />
     <SUITE FILE_PATH="coverage/SmartHome$hello.coverage" NAME="hello Coverage Results" MODIFIED="1532934601558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/software/resource" />
   </component>
   <component name="DatabaseView">
@@ -53,17 +53,17 @@
       <file leaf-file-name="dataSaveResource.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hardware/dataSaveResource.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="603">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="660">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="androidResource.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="androidResource.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hardware/androidResource.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="31">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
               <folding>
                 <element signature="e#157#167#0" expanded="true" />
               </folding>
@@ -107,11 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BME280.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BME280.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hardware/BME280.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+            <state relative-caret-position="572">
+              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="12" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -151,15 +151,15 @@
         <option value="$PROJECT_DIR$/hardware/_init_.py" />
         <option value="$PROJECT_DIR$/software/resource/_init_.py" />
         <option value="$PROJECT_DIR$/software/_init_..py" />
-        <option value="$PROJECT_DIR$/hardware/BME280.py" />
         <option value="$PROJECT_DIR$/hardware/open.py" />
         <option value="$PROJECT_DIR$/hardware/open_air.py" />
         <option value="$PROJECT_DIR$/hardware/open_light.py" />
         <option value="$PROJECT_DIR$/hardware/close_light.py" />
         <option value="$PROJECT_DIR$/hardware/close_air.py" />
-        <option value="$PROJECT_DIR$/hardware/androidResource.py" />
         <option value="$PROJECT_DIR$/hardware/app.py" />
         <option value="$PROJECT_DIR$/hardware/dataSaveResource.py" />
+        <option value="$PROJECT_DIR$/hardware/androidResource.py" />
+        <option value="$PROJECT_DIR$/hardware/BME280.py" />
       </list>
     </option>
   </component>
@@ -173,10 +173,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="993" />
-    <option name="y" value="25" />
-    <option name="width" value="927" />
-    <option name="height" value="1055" />
+    <option name="x" value="186" />
+    <option name="y" value="130" />
+    <option name="width" value="1294" />
+    <option name="height" value="950" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -242,7 +242,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.hello">
+  <component name="RunManager" selected="Python.androidResource">
     <configuration name="BME280" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SmartHome" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -257,6 +257,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hardware/BME280.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="androidResource" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SmartHome" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hardware" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hardware/androidResource.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -304,9 +323,11 @@
       <item itemvalue="Python.hello" />
       <item itemvalue="Python.soundRecognise" />
       <item itemvalue="Python.BME280" />
+      <item itemvalue="Python.androidResource" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.androidResource" />
         <item itemvalue="Python.hello" />
         <item itemvalue="Python.BME280" />
         <item itemvalue="Python.soundRecognise" />
@@ -328,6 +349,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -335,8 +357,8 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.278481" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.26476794" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.119266056" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.26476794" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.119266056" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" visible="true" weight="0.1295197" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32965165" />
@@ -608,16 +630,6 @@
     <entry file="file://$PROJECT_DIR$/hardware/_init_.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/hardware/BME280.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hardware/close_air.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -642,13 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hardware/dataSaveResource.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hardware/close_light.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -656,12 +661,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hardware/dataSaveResource.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hardware/androidResource.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="31">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
           <folding>
             <element signature="e#157#167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardware/BME280.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
