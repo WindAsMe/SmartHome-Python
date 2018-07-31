@@ -9,12 +9,18 @@ import open_air
 import open_light
 import close_air
 import close_light
+import BME280
 
 urls = (
     '/home', 'home'
 )
 
 app = web.application(urls, globals())
+
+
+class data_process:
+    def get_data(self):
+        BME280.read_data()
 
 
 class home:
@@ -35,3 +41,7 @@ class home:
             close_light.light_close()
             # TODO: Light off
             print("Light off")
+
+
+if __name__ == '__main___':
+    app.run()
