@@ -10,6 +10,7 @@ import open_air
 import close_air
 import open_light
 import close_light
+import json
 
 url = 'http://13.67.109.181:8080/work'
 
@@ -21,14 +22,15 @@ def get_movement():
         print(req)
         res = urllib2.urlopen(req)
         res = res.read()
-        if res["data"]["is_worked"]:
-            if res["data"]["flag"] == 1:
+        res_json = json.load(res)
+        if res_json["data"]["is_worked"] == 0:
+            if res_json["data"]["flag"] == 1:
                 open_air.air_open()
-            if res["data"]["flag"] == 2:
+            if res_json["data"]["flag"] == 2:
                 close_air.air_close()
-            if res["data"]["flag"] == 3:
+            if res_json["data"]["flag"] == 3:
                 open_light.light_open()
-            if res["data"]["flag"] == 4:
+            if res_json["data"]["flag"] == 4:
                 close_light.light_close()
     except Exception, e:
         print(e)
