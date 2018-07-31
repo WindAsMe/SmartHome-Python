@@ -5,10 +5,7 @@
 # File     :androidResource.py
 # Location:/Home/PycharmProjects/..
 import web
-import open_air
-import open_light
-import close_air
-import close_light
+from ultimate import open_light, close_air, close_light, open_air
 
 urls = (
     '/home', 'home'
