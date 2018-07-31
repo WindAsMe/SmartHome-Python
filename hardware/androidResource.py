@@ -15,7 +15,7 @@ urls = (
 )
 
 app = web.application(urls, globals())
-
+web.header("Access-Control-Allow-Origin", "*")
 
 class home:
     def GET(self, flag):
