@@ -6,12 +6,13 @@
 # Location:/Home/PycharmProjects/..
 
 import wave
-import urllib, urllib2, pycurl
-import base64
+import urllib2
+import \
+    pycurl
 import json
 
 
-## get access token by api key & secret key
+# get access token by api key & secret key
 
 def get_token():
     apiKey = "USxASXrOrk5ltfcRIjT34zCA"
@@ -26,14 +27,14 @@ def dump_res(buf):
     print buf
 
 
-## post audio to server
+# post audio to server
 def use_cloud(token):
-    fp = wave.open('vad_0.wav', 'rb')
+    fp = wave.open('16k.wav', 'rb')
     nf = fp.getnframes()
     f_len = nf * 2
     audio_data = fp.readframes(nf)
 
-    cuid = "xxxxxxxxxx"  # my xiaomi phone MAC
+    cuid = "6a:ab:1e:7b:98:1d"  # my xiaomi phone MAC
     srv_url = 'http://vop.baidu.com/server_api' + '?cuid=' + cuid + '&token=' + token
     http_header = [
         'Content-Type: audio/pcm; rate=8000',
