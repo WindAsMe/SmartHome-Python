@@ -7,6 +7,7 @@
 import web
 import datetime
 db = web.database(dbn='mysql', db='SmartHome', user='root', host='13.67.109.181', pw='root')
+web.header("Access-Control-Allow-Origin", "*")
 
 
 def insert_humid(humid):
