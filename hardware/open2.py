@@ -3,10 +3,8 @@ import RPi.GPIO as GPIO
 import time
 
 
-
 # Pin  Definitions
 ledPin = 11
-
 
 
 # Pin Setup

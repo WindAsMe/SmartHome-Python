@@ -1,12 +1,9 @@
 # import the GPIO and time package
 import RPi.GPIO as GPIO
-import time
-
 
 
 # Pin  Definitions
 ledPin = 7
-
 
 
 # Pin Setup

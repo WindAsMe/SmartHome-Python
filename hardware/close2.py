@@ -2,10 +2,8 @@
 import RPi.GPIO as GPIO
 
 
-
 # Pin  Definitions
 ledPin = 11
-
 
 
 # Pin Setup
